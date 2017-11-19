@@ -1,5 +1,6 @@
 <?php
 require_once('includes/connect.php');
+include('header.php');
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -20,7 +21,7 @@ if (!$result) {
 
 
 while ($row = pg_fetch_row($result)) {
-  echo "No: $row[0]  E-mail: $row[1]  Addr: $row[2] <br>";
+  echo "No: $row[0]  Name: $row[1]  Addr: $row[2] <br>";
   
 }
 
