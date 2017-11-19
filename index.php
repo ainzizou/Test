@@ -1,6 +1,7 @@
 <?php
 require_once('includes/connect.php');
 include('header.php');
+#include('navbar.php');
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -18,14 +19,25 @@ if (!$result) {
   exit;
 }
 
+?>
 
+<table bgcolor="#FFFFFF" width="200" border="0">
+<tr><thead><td>No</td>
+<td>Name</td>
+<td>Address</td></thead></tr>
+
+<?php
 
 while ($row = pg_fetch_row($result)) {
-  echo "No: $row[0]  Name: $row[1]  Addr: $row[2] <br>";
+	echo "<tr><td>$row[0]</td>";
+	echo "<td>$row[1]</td>";
+	echo "<td>$row[2]</td></tr>";
+  #echo "No: $row[0]  Name: $row[1]  Addr: $row[2] <br>";
   
 }
-
 ?>
+
+</table>
 <body>
 </body>
 </html>
