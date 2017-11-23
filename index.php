@@ -1,7 +1,7 @@
 <?php
-require_once('includes/connect.php');
+require_once('connect.php');
 include('header.php');
-#include('navbar.php');
+include('navbar.php');
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

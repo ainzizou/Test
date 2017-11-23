@@ -13,12 +13,6 @@
     <td width="50%" style="text-align:right"><img src="images/logo.png" width="275" height="113" /></td>
   </tr>
 </table>
-<ul class="topnav">
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li style="float:right"><a href="#about">Logout</a></li>
-</ul>
 </body>
 </div>
 </div>
